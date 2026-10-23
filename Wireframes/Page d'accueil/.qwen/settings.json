@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(C:\\Users\\berna\\Documents\\2_Dev\\1_Environnement_de_dev\\1_Projets\\03-Maquette_veterinaire\\Wireframes\\Prendre RDV/**)",
+      "Read(C:\\Users\\berna\\Documents\\2_Dev\\1_Environnement_de_dev\\1_Projets\\03-Maquette_veterinaire\\Wireframes\\Pour les propriétaires/**)"
+    ]
+  },
+  "$version": 4
+}

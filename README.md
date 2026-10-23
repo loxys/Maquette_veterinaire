@@ -35,6 +35,8 @@ Start-Process ".\Wireframes\Page d'accueil\index.html"
 
 Utiliser ensuite le menu et les liens de la maquette pour naviguer entre les pages.
 
+Le bouton **Pour les vétérinaires** ouvre `Wireframes\pour-les-veterinaires\index.html`, qui présente le parcours de référé.
+
 Conserver les dossiers `Wireframes` et `Assets` à leur emplacement : les pages utilisent des chemins relatifs pour charger la feuille de style, les images et les autres pages.
 
 ## Organisation du projet
