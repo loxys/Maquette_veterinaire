@@ -1,6 +1,6 @@
-# CHAL’VET — Maquette du site vétérinaire
+# Chal'Vet — Maquette du site vétérinaire
 
-Maquette statique en HTML et CSS. Aucun serveur, aucune base de données et aucune installation de dépendances ne sont nécessaires pour la consulter.
+Maquette statique en HTML et CSS, avec un JavaScript local limité à la démonstration. Aucun serveur, aucune base de données et aucune installation de dépendances ne sont nécessaires pour la consulter.
 
 ## Installation
 
@@ -48,3 +48,17 @@ Conserver les dossiers `Wireframes` et `Assets` à leur emplacement : les pages 
 ## Limites de la maquette
 
 Les formulaires et services numériques présentés sont des prototypes non fonctionnels : aucun envoi de données, compte utilisateur ou suivi de dossier n’est actif.
+
+## Compte rendu pour le développeur
+
+- Le nom public est uniformisé en **Chal'Vet** et les annotations de conception sont retirées des treize pages. Les URL et chemins existants sont conservés.
+- Les bandeaux d’entrée des treize pages utilisent un seul H1 court, sans surtitre, avec une introduction concise si nécessaire. **Ressources** et **Contact** affichent uniquement le titre après le fil d’Ariane. Les espacements sont réduits ; les surtitres des sections internes, les images et les interactions sont conservés.
+- Les bandeaux de rappel centrés en fin de page sont supprimés sur l’ensemble du site. Les contenus principaux et les pieds de page sont conservés, sans vague intercalaire au bas des sections à fond doux.
+- La page **Pour les propriétaires** présente le rendez-vous en deux étapes : orientation par le vétérinaire, puis contact avec la clinique. Le bouton **Contacter la clinique** mène directement au bloc de coordonnées, repris de la page **Contact** avec le même style et les mêmes informations d’accès. Ces deux blocs devront être mis à jour ensemble lorsque les coordonnées définitives seront fournies ; aucune réservation en ligne n’est ajoutée.
+- Sur la page **Pour les vétérinaires**, les champs restent désactivés. **Envoyer la demande** ouvre uniquement une boîte de dialogue locale affichant « Chal'Vet a bien reçu votre demande. ». Elle se ferme avec **Fermer** ou **Échap**, puis le focus revient au bouton déclencheur.
+- **L’envoi et la confirmation de réception sont simulés.** Aucun e-mail n’est envoyé, aucune réception n’est vérifiée et aucune donnée n’est transmise ni enregistrée. L’envoi réel, la vérification de réception, la validation des champs et le traitement sécurisé des pièces jointes devront être implémentés ultérieurement, hors du périmètre de cette maquette.
+- **Imprimer le formulaire** appelle uniquement l’impression native du navigateur. Le style d’impression conserve le formulaire et masque navigation, autres sections, boutons et pop-up ; aucune bibliothèque ni génération de PDF n’est ajoutée.
+- Aucun backend, base de données ou service externe n’est ajouté. Les coordonnées manquantes ne sont pas inventées ; elles restent à fournir par la clinique, de même que les modalités opérationnelles et les textes juridiques définitifs.
+- Les vagues de fond sont statiques, avec un masque SVG embarqué commun aux pages. Leur couleur rejoint le fond de la section suivante pour éviter les bandes de raccord ; les vagues supprimées en bas de Contact, Ressources et Services restent absentes. Aucune dépendance ni ressource externe n’est nécessaire.
+- La page **Ressources** propose une carte par lien, répartie entre informations essentielles (propriétaires, vétérinaires et préparation de consultation) et lectures facultatives (« Découvrir le parcours de référé » et « Découvrir l’espace professionnel »), sans dupliquer les services ni afficher le bandeau « À retenir ». La dernière section de **Contact** utilise une transition droite vers le pied de page, sans vague ; les autres vagues sont conservées.
+- Le visuel principal de l’accueil est encadré par un galet asymétrique, sans contour superposé sur la photo. Le portrait du fondateur conserve un médaillon ovale sur l’accueil ; sur la page **À propos**, il utilise un cadre rectangulaire adouci avec un coin inférieur plus arrondi. Les images existantes sont conservées et les formes sont réalisées uniquement en CSS.
